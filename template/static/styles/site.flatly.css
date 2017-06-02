@@ -7471,6 +7471,9 @@ code {
   background-color: inherit;
   color: inherit;
 }
+h4.name {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
 .member {
   -webkit-transition: background-color 0.5s linear;
   -o-transition: background-color 0.5s linear;
