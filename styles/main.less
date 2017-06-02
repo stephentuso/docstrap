@@ -8,7 +8,7 @@
 @import (less) "../bower_components/prism/plugins/line-numbers/prism-line-numbers.css";
 @import (less) "../bower_components/prism/plugins/toolbar/prism-toolbar.css";
 
-@headerHeight: 62px;
+@headerHeight: 50px;
 
 /* Lighter Background for Okaidia-Theme*/
 pre[class*="language-"] {
@@ -68,6 +68,11 @@ img.branding-logo {
     overflow: auto;
     padding: 5px;
 
+    .list-group-item {
+      border: none;
+      padding: 8px 15px;
+    }
+
     .toc-h1 {
         margin-left: 2px;
         margin-right: 2px;
@@ -86,6 +91,25 @@ img.branding-logo {
     .toc-h4 {
         margin-left: 21px;
         margin-right: 7px;
+    }
+}
+
+#left-nav {
+    position: fixed;
+    top: @headerHeight;
+    bottom: 0px;
+    left: 0px;
+    overflow: auto;
+    padding: 12px 0 12px 12px;
+    width: 200px;
+
+    .list-group {
+        border-left: 4px solid #ccc;
+    }
+
+    .list-group-item {
+        border: none;
+        padding: 5px 15px;
     }
 }
 

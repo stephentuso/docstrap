@@ -14,6 +14,20 @@
 
 <body>
 
+<div id="left-nav" class="hidden-xs hidden-sm hidden-md">
+  <h4><a href="<?js= this.nav.index.link ?>">Home</a></h4>
+  <?js this.nav.topLevelNav.forEach(function(entry){ ?>
+  <div>
+    <h4><?js= entry.title ?></h4>
+    <ul class="list-group">
+      <?js entry.members.forEach(function(member){ ?>
+        <li class="list-group-item"><?js= member ?></li>
+      <?js	}); ?>
+    </ul>
+  </div>
+  <?js }); ?>
+</div>
+
 <div class="navbar navbar-default navbar-fixed-top <?js= this.navOptions.inverseNav ? 'navbar-inverse' : '' ?>">
 <div class="container">
 	<div class="navbar-header">
@@ -28,7 +42,7 @@
 	<div class="navbar-collapse collapse" id="topNavigation">
 		<ul class="nav navbar-nav">
 			<?js this.nav.topLevelNav.forEach(function(entry){ ?>
-			<li class="dropdown">
+			<li class="dropdown hidden-lg hidden-xl">
 				<a href="<?js= entry.link ?>" class="dropdown-toggle" data-toggle="dropdown"><?js= entry.title ?><b class="caret"></b></a>
 				<ul class="dropdown-menu <?js= that.navOptions.navType ==='inline' ? 'inline' : '' ?>">
 					<?js entry.members.forEach(function(member){ ?><li><?js= member ?></li><?js	}); ?>
@@ -71,7 +85,7 @@
 
 	<?js if(docs && docs[0].kind !== "source"){ ?>
 		<div class="col-md-3">
-			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm"></div>
 		</div>
 	<?js } ?>
 
