@@ -7280,6 +7280,7 @@ pre[class*="language-"] {
 }
 #main {
   margin-top: 62px;
+  padding-top: 8px;
 }
 .navbar-fixed-top .navbar-inner {
   padding-left: 20px;
