@@ -7280,6 +7280,7 @@ pre[class*="language-"] {
 }
 #main {
   margin-top: 50px;
+  padding-top: 12px;
 }
 .navbar-fixed-top .navbar-inner {
   padding-left: 20px;
@@ -7303,6 +7304,12 @@ img.branding-logo {
 #toc .list-group-item {
   border: none;
   padding: 8px 15px;
+}
+#toc .list-group-item.active {
+  border-left: 3px solid #2780E3;
+  margin-left: -3px;
+  color: #333333;
+  background-color: rgba(39, 128, 227, 0.1);
 }
 #toc .toc-h1 {
   margin-left: 2px;

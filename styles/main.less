@@ -42,6 +42,7 @@ pre[class*="language-"] {
 
 #main {
     margin-top: @headerHeight;
+    padding-top: 12px;
 }
 
 .navbar-fixed-top {
@@ -71,6 +72,13 @@ img.branding-logo {
     .list-group-item {
       border: none;
       padding: 8px 15px;
+    }
+
+    .list-group-item.active {
+      border-left: 3px solid @brand-primary;
+      margin-left: -3px;
+      color: @text-color;
+      background-color: fade(@brand-primary, 10%)
     }
 
     .toc-h1 {
