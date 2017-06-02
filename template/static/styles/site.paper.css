@@ -7969,8 +7969,7 @@ pre[class*="language-"] {
   cursor: initial;
 }
 #main {
-  margin-top: 50px;
-  padding-top: 12px;
+  margin-top: 62px;
 }
 .navbar-fixed-top .navbar-inner {
   padding-left: 20px;
@@ -7984,10 +7983,10 @@ img.branding-logo {
 }
 #toc {
   position: fixed;
-  top: 50px;
+  top: 62px;
   right: 0;
   max-height: 82%;
-  max-height: calc(100% - 60px);
+  max-height: calc(100% - 72px);
   overflow: auto;
   padding: 5px;
 }
@@ -8019,7 +8018,7 @@ img.branding-logo {
 }
 #left-nav {
   position: fixed;
-  top: 50px;
+  top: 62px;
   bottom: 0px;
   left: 0px;
   overflow: auto;
@@ -8064,8 +8063,8 @@ code {
   border: none;
 }
 .buffered-name {
-  padding-top: 50px;
-  margin-top: -50px;
+  padding-top: 62px;
+  margin-top: -62px;
 }
 .member-collapsed {
   background-color: #2196F3;
@@ -8100,31 +8099,31 @@ code {
 }
 @media (min-height: 300px) {
   .dropdown-menu {
-    max-height: 250px;
+    max-height: 238px;
   }
 }
 @media (min-height: 400px) {
   .dropdown-menu {
-    max-height: 350px;
+    max-height: 338px;
   }
 }
 @media (min-height: 500px) {
   .dropdown-menu {
-    max-height: 450px;
+    max-height: 438px;
   }
 }
 @media (min-height: 600px) {
   .dropdown-menu {
-    max-height: 550px;
+    max-height: 538px;
   }
 }
 @media (min-height: 700px) {
   .dropdown-menu {
-    max-height: 650px;
+    max-height: 638px;
   }
 }
 .dropdown-menu {
-  max-height: calc(100vh - 50px);
+  max-height: calc(100vh - 62px);
 }
 @media (max-width: 768px) {
   .dropdown-menu {
