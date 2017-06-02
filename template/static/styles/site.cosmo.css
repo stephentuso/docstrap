@@ -7386,7 +7386,7 @@ code {
   color: inherit;
 }
 h4.name,
-dt.name {
+dt.name h4 {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 .member {
