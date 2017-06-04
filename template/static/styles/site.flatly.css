@@ -7421,6 +7421,7 @@ img.branding-logo {
   overflow: auto;
   padding: 12px 0 12px 12px;
   width: 200px;
+  display: none;
 }
 #left-nav .list-group {
   border-left: 4px solid #ccc;
@@ -7529,5 +7530,13 @@ dt.name h4 {
 @media (max-width: 768px) {
   .dropdown-menu {
     max-height: none;
+  }
+}
+@media (min-width: 1520px) {
+  .nav.navbar-nav {
+    display: none !important;
+  }
+  #left-nav {
+    display: block !important;
   }
 }
